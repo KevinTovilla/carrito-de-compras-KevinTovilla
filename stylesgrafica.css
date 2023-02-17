@@ -1,0 +1,100 @@
+:root{
+    --color-playeras: #2d1fee;
+    --color-pantalones: #e62a2a;
+    --color-tenis: #dd1fee;
+    --color-gorras: #1fee30;
+    --background-color: rgb(62, 80, 173);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.titulo-grafico{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenido-de-grafica{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grafico{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color-playeras)41%, 
+                                     var(--color-pantalones)41% 75%,
+                                     var(--color-tenis)75% 90%,
+                                     var(--color-gorras)90% 100%);
+    box-shadow: 1px 1px 5px 1px rgb(70, 70, 70);
+}
+
+.leyenda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+[class^="color"]{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-playeras);
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.color-pantalones{
+    background-color: var(--color-pantalones);
+}
+
+.color-tenis{
+    background-color: var(--color-tenis);
+}
+
+.color-gorras{
+    background-color: var(--color-gorras);
+}
+
+.ropa{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+}
+
+.total{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(30, 50, 70);
+}
+
+.salir{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    height: 30px;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(30, 50, 70);
+    
+}
+.salir:hover{
+    cursor: pointer;/*cambia de flecha a manita*/
+}
+
